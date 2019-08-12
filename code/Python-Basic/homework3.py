@@ -51,13 +51,13 @@ def modifyPet():
             petList[i][Prop] = Value
 
 def exit():
-    f = open("homework3.cfg", "w")
+    f = open("/code/Python-Basic/homework3.cfg", "w")
     for i in range(0, len(petList)):
         print(petList[i][0], petList[i][1], petList[i][2], petList[i][3], petList[i][4], file=f)
     f.close()
 
 def init():
-    f = open("homework3.cfg", "r")
+    f = open("/code/Python-Basic/homework3.cfg", "r")
     s = f.readlines()
     for i in range(0, len(s)):
         s[i] = s[i][0: len(s[i])-1]
