@@ -1,0 +1,5 @@
+l = [0x2e, 0xfd, 0xa7, 0x01, 0x01]
+b = bytearray(l)
+print(b)
+h = [hex(x) for x in b]
+print(h)
